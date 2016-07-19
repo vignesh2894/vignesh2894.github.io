@@ -356,17 +356,17 @@ ul#nav li.current a { color: #F06000; }
   	-webkit-animation: c 2s ease;
 }
 .cpp {
-  	width: 50%;
+  	width: 55%;
   	-moz-animation: cpp 2s ease;
   	-webkit-animation: cpp 2s ease;
 }
 .r {
-  	width: 50%;
+  	width: 70%;
   	-moz-animation: r 2s ease;
   	-webkit-animation: r 2s ease;
 }
 .pda {
-  	width: 50%;
+  	width: 90%;
   	-moz-animation: pda 2s ease;
   	-webkit-animation: pda 2s ease;
 }
@@ -1041,5 +1041,5 @@ footer .social-links li:first-child { margin-left: 0; }
    line-height: 60px;
  	border-radius: 100%;
 }
-#go-top a:hover { background-color: #0F9095; }
+
 
