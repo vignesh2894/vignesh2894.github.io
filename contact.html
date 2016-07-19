@@ -1,239 +1,195 @@
-<<<<<<< HEAD
-﻿<!DOCTYPE html>
-<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
-<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
-<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
-<!--[if (gte IE 9)|!(IE)]><!-->
+<!DOCTYPE html>
 <html lang="en">
-<!--<![endif]-->
-<!-- HEAD SECTION -->
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <!--[if IE]>
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <![endif]-->
-    <title>Bootstrap Mutipager Template - Maxop</title>
-    <!--GOOGLE FONT -->
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-    <!--BOOTSTRAP MAIN STYLES -->
-    <link href="assets/css/bootstrap.css" rel="stylesheet" />
-    <!--FONTAWESOME MAIN STYLE -->
-    <link href="assets/css/font-awesome.min.css" rel="stylesheet" />
-    <!--CUSTOM STYLE -->
-    <link href="assets/css/style.css" rel="stylesheet" />
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
-    <![endif]-->
+  <meta charset="utf-8">
+  <title>ShapeBootstrap Clean Template</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+	
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/bootstrap-responsive.min.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+
+  <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+  <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+  <![endif]-->
+
+  <!-- Fav and touch icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/apple-touch-icon-144-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/apple-touch-icon-114-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/apple-touch-icon-72-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" href="img/apple-touch-icon-57-precomposed.png">
+  <link rel="shortcut icon" href="img/favicon.png">
+  
+
+
+    <!-- SCRIPT 
+    ============================================================-->  
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <!--GOOGLE MAP-->
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+     <script>
+		var map;
+		function initialize() {
+		  var mapOptions = {
+		    zoom: 8,
+		    center: new google.maps.LatLng(-34.397, 150.644),
+		    mapTypeId: google.maps.MapTypeId.ROADMAP
+		  };
+		  map = new google.maps.Map(document.getElementById('map-canvas'),
+		      mapOptions);
+		}
+
+		google.maps.event.addDomListener(window, 'load', initialize);
+
+    </script>
 </head>
-<!--END HEAD SECTION -->
+
 <body>
-    <!-- NAV SECTION -->
-    <div class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#">YOUR LOGO</a>
-            </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="index.html">HOME</a></li>
-                    <li><a href="about.html">ABOUT</a></li>
-                    <li><a href="services.html">SERVICES</a></li>
-                    <li><a href="pricing.html">PRICING</a></li>
-                    <li><a href="gallery.html">GALLERY</a></li>
-                    <li><a href="contact.html">CONTACT</a></li>
-                </ul>
-            </div>
-
-        </div>
-    </div>
-    <!--END NAV SECTION -->
-    <!-- CONTACT SECTION -->
-    <div class="section">
-        <div class="container">
 
 
-            <div class="row main-low-margin">
-                <div class="col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1">
-                    <h1>Contact Details</h1>
-                    <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                         Curabitur nec nisl odio. Mauris vehicula at nunc id posuere.
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                         Curabitur nec nisl odio. Mauris vehicula at nunc id posuere.
-                         Curabitur nec nisl odio. Mauris vehicula at nunc id posuere.
-                    </h5>
-                </div>
-            </div>
-
-
-        </div>
-    </div>
-
+  <!--HEADER ROW-->
+  <div id="header-row">
     <div class="container">
-        <div class="row main-low-margin text-center">
-            <div class="col-md-5 col-sm-5">
-                <div class="circle-body"><i class="fa fa-flask fa-5x  icon-set"></i></div>
-                <h3>TESTED DESIGN</h3>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                         Curabitur nec nisl odio. Mauris vehicula at nunc id posuere.
-                        Curabitur nec nisl odio. Mauris vehicula at nunc id posuere.
-                </p>
-            </div>
+      <div class="row">
+              <!--LOGO-->
+              <div class="span3"><a class="brand" href="#"><img src="img/logo.png"/></a></div>
+              <!-- /LOGO -->
 
-            <div class="col-md-7 col-sm-7">
-                <h3>SEND A QUICK QUERY</h3>
-                <hr>
-                <form action="https://formspree.io/vigneshv294@gmail.com" method="POST">
-                    <div class="row">
-                        <div class="col-md-6 col-sm-6">
-                            <div class="form-group">
-                                <input type="text" name="name" class="form-control" required="required" placeholder="Name">
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-sm-6">
-                            <div class="form-group">
-                                <input type="text" name="_replyto" class="form-control" required="required" placeholder="Email address">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-12 col-sm-12">
-                            <div class="form-group">
-                                <textarea name="message" id="Textarea1" required="required" class="form-control" rows="7" placeholder="Message"></textarea>
-                            </div>
-                            <div class="form-group">
-                                <button type="submit" class="btn btn-primary">Submit Request</button>
-                            </div>
-                        </div>
-                    </div>
-                </form>
-            </div>
-			
-        </div>
-        <div class="row main-low-margin ">
+            <!-- MAIN NAVIGATION -->  
+              <div class="span9">
+                <div class="navbar  pull-right">
+                  <div class="navbar-inner">
+                    <a data-target=".navbar-responsive-collapse" data-toggle="collapse" class="btn btn-navbar"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a>
+                    <div class="nav-collapse collapse navbar-responsive-collapse">
+                    <ul class="nav">
+                        <li class="active"><a href="index.html">Home</a></li>
+                        
+                        <li class="dropdown">
+                          <a href="about.html" class="dropdown-toggle" data-toggle="dropdown">About <b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                  <li><a href="about.html">Company</a></li>
+                                  <li><a href="about.html">History</a></li>
+                                  <li><a href="about.html">Team</a></li>
+                            </ul>
 
+                        </li>
 
-            <div class="col-md-7 col-sm-7">
-                <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit </h3>
-                <hr>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                         Curabitur nec nisl odio. Mauris vehicula at nunc id posuere.
-                        Curabitur nec nisl odio. Mauris vehicula at nunc id posuere.
-                              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                         Curabitur nec nisl odio. Mauris vehicula at nunc id posuere.
-                        Curabitur nec nisl odio. Mauris vehicula at nunc id posuere.
-                </p>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                         Curabitur nec nisl odio. Mauris vehicula at nunc id posuere.
-                        Curabitur nec nisl odio. Mauris vehicula at nunc id posuere.
-                              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                         Curabitur nec nisl odio. Mauris vehicula at nunc id posuere.
-                        Curabitur nec nisl odio. Mauris vehicula at nunc id posuere.
-                </p>
-            </div>
-            <div class="col-md-5 col-sm-5 text-center">
-                <div class="circle-body"><i class="fa fa-tint fa-5x  icon-set"></i></div>
-                <h3>OUR LOCATION </h3>
-                <p>
-                    <p>
-                        103, New Street,<br>
-                        New York, USA.<br>
-                        Call: +23-00-89-009<br>
-                        Email: demo@yourdomain.com<br>
-                    </p>
+                        <li><a href="service.html">Services</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                 
+                    </ul>
+                  </div>
 
-                </p>
-            </div>
-        </div>
-
-
+                  </div>
+                </div>
+              </div>
+            <!-- MAIN NAVIGATION -->  
+      </div>
     </div>
-    <div class="space-bottom"></div>
-    <!--END CONTACT SECTION -->
-    <!--FOOTER SECTION -->
+  </div>
+  <!-- /HEADER ROW -->
 
-    <div id="footer">
-        <div class="row">
-            <div class="col-md-4">
-                <h4>Quick Information :</h4>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                         Curabitur nec nisl odio. Mauris vehicula at nunc id posuere.
-                        Curabitur nec nisl odio. Mauris vehicula at nunc id posuere.
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                         Curabitur nec nisl odio. Mauris vehicula at nunc id posuere.
-                </p>
-                <button type="submit" class="btn btn-primary">Get Quote</button>
-            </div>
-            <div class="col-md-4">
-                <h4>Need Help ? Write Us. </h4>
-                <hr>
-                <form action="https://formspree.io/vigneshv294@gmail.com" method="POST">
-                    <div class="row">
-                        <div class="col-md-6 col-sm-6">
-                            <div class="form-group">
-                                <input type="text" name="name" class="form-control" required="required" placeholder="Name">
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-sm-6">
-                            <div class="form-group">
-                                <input type="text" name="_replyto" class="form-control" required="required" placeholder="Email address">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-12 col-sm-12">
-                            <div class="form-group">
-                                <textarea name="message" id="message" required="required" class="form-control" rows="3" placeholder="Message"></textarea>
-                            </div>
-                            <div class="form-group">
-                                <button type="submit" class="btn btn-primary">Submit Request</button>
-                            </div>
-                        </div>
-                    </div>
-                </form>
-            </div>
-            <div class="col-md-4">
-                <a href="#"><i class="fa fa-facebook-square fa-3x color-facebook"></i></a>
-                <a href="#"><i class="fa fa-twitter-square fa-3x color-twitter"></i></a>
-                <a href="#"><i class="fa fa-google-plus-square fa-3x color-google-plus"></i></a>
-                <a href="#"><i class="fa fa-linkedin-square fa-3x color-linkedin"></i></a>
-                <a href="#"><i class="fa fa-pinterest-square fa-3x color-pinterest"></i></a>
-                <hr>
-                <p>
-                    103, New Street,<br>
-                    New York, USA.<br>
-                    Call: +23-00-89-009<br>
-                    Email: demo@yourdomain.com<br>
-                </p>
 
-                2014 www.yourdomain.com | All Right Reserved
+
+
+<div class="container">
+	  <!--PAGE TITLE-->
+
+	<div class="row">
+		<div class="span12">
+		<div class="page-header">
+				<h1>
+				Contact
+			</h1>
+		</div>
+		</div>
+	</div>
+
+  <!-- /. PAGE TITLE-->
+
+  <div class="row">
+
+  	<div class="span12"> 
+  		<div id="map-canvas"></div>
+  	</div>
+
+  		<span class="span6">
+  			<form>
+				<fieldset>
+					 <h3>Get in Touch</h3>
+					 
+					 <input class="input-xxlarge" type="text" placeholder="Name" /> 
+					 <input class="input-xxlarge" type="text" type="email" placeholder="Email" required/> 
+
+					 <textarea  class="input-xxlarge"  rows="10"  placeholder="Your Message"></textarea>
+						<br>
+					 <button type="submit" class="btn">Submit</button>
+				</fieldset>
+			</form>
+  		</span>
+
+
+  		<span class="span6">
+
+
+
+  			<h3>Address</h3>
+  			<address>
+  <strong>Fornax, Inc.</strong><br>
+  795 Folsom Ave, Suite 600<br>
+  San Francisco, CA 94107<br>
+  <abbr title="Phone">P:</abbr> (123) 456-7890
+</address>
+ 
+<address>
+  <strong>Full Name</strong><br>
+  <a href="mailto:#">first.last@example.com</a>
+</address>
+
+  			<p>
+Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
+
+
+  			</p>
+  		</span>
+
+  </div>
+
+	
+</div>
+
+
+
+<!--Footer
+==========================-->
+
+<footer>
+    <div class="container">
+      <div class="row">
+        <div class="span6">Copyright &copy 2013 Shapebootstrap | All Rights Reserved  <br>
+        <small>Aliquam tincidunt mauris eu risus.</small>
+        </div>
+        <div class="span6">
+            <div class="social pull-right">
+                <a href="#"><img src="img/social/googleplus.png" alt=""></a>
+                <a href="#"><img src="img/social/dribbble.png" alt=""></a>
+                <a href="#"><img src="img/social/twitter.png" alt=""></a>
+                <a href="#"><img src="img/social/dribbble.png" alt=""></a>
+                <a href="#"><img src="img/social/rss.png" alt=""></a>
             </div>
         </div>
-
-
+      </div>
     </div>
+</footer>
 
-    <!--END FOOTER SECTION -->
-    <!-- JAVASCRIPT FILES PLACED AT THE BOTTOM TO REDUCE THE LOADING TIME  -->
-    <!-- CORE JQUERY LIBRARY -->
-    <script src="assets/js/jquery.js"></script>
-    <!-- CORE BOOTSTRAP LIBRARY -->
-    <script src="assets/js/bootstrap.min.js"></script>
+<!--/.Footer-->
 
 </body>
 </html>
-
